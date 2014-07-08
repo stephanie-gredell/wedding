@@ -1,0 +1,618 @@
+/* Table of Content
+-----------------------------------------------------------------
+1.	Base style
+2.	Wrap / Container 
+3.	Common style
+4.	Card style
+5.	Preloader
+6.	Header
+7.	Home
+8.	Wedding
+9.	Wedding Album
+10.	Gift
+11.	Contact
+*/
+
+/*-------------------------------------------------------*/
+	/* Base style	 */
+/*-------------------------------------------------------*/
+	html { overflow-y:scroll; }
+	body {
+	background-color:#e7e7e7;
+	background-repeat:repeat;
+	background-position:left top;
+   	}
+	body  a { color:#7c7c7c; text-decoration:none; }
+	body a:link{ color:#c9af9e; text-decoration:none;}
+	body a:visited{ color:#c9af9e; text-decoration:none;}
+	body  a:hover { color:#b3927c; text-decoration:none; }
+	body a:active{ color:#c9af9e; text-decoration:none;}
+	body ::selection { background:#898888; color:white; }
+	body ::-moz-selection { background:#898888; color:white; }
+	.clr { clear:both; padding:0px; margin:0px; }
+	.float_left{ float:left;}
+	.float_right{ float:right;}
+	p{ margin:0px; padding:0px; }
+	.img-left { float:left; }
+	p, ul, ol, blockquote { margin-bottom:20px; }
+/**********************  //Base style  ******************************/	
+		
+/*-------------------------------------------------------*/
+	/* Wrap/Container	 */
+/*-------------------------------------------------------*/
+	#wrapper{ clear:both; width:100%; margin:0px auto; }
+	.container{ clear:both; width:1068px; margin:0 auto; z-index:888888; margin-top:-80px; }
+	#content {
+	background-image:url(../images/index-bg.png);
+	background-repeat:repeat-y;
+	background-position:left top;
+	height:auto;
+	clear:both;
+	z-index:888888;
+	}
+	#home, #wedding, #gift, #portfolio, #contact { width:980px; margin:0 auto;  clear:both;}
+/**********************  // Wrap/Container  ******************************/		
+
+/*-------------------------------------------------------*/
+	/* Common Style	 */
+/*-------------------------------------------------------*/
+	.dot_line{ clear:both; width:500px; margin:20px auto;}
+	.heading_dots{ clear:both; width:500px; margin:20px auto;}	
+	.left_dots, .right_dots{
+	float:left;	
+	background-image: url(../images/dot_line.png);
+	background-repeat: repeat-x;
+	background-position: left center;	
+	padding:10px 0px; height:26px;
+	}
+	.left_dots{ width:42%;}
+	.right_dots{ width:42%;}
+	.heart{
+	float:left;
+	background-image:url(../images/small_heart.png);
+	background-repeat:no-repeat;
+	width:42px;
+	height:36px;
+	background-position:center top;
+	margin-left:10px;
+	margin-right:10px;
+	}		
+	.heading{
+	float:left;
+	font-size:36px; 
+	font-weight:700;
+	line-height:36px; 
+	color:#c9af9e; 
+	text-transform:uppercase; 
+	text-align:center;
+	padding:0px 10px;
+	width:auto;
+	}
+/**********************  // Common Style  ******************************/	
+	
+/*-------------------------------------------------------*/
+	/* Card style	 */
+/*-------------------------------------------------------*/
+	.card-pattern {
+	background-image:url(../images/patterns/cards/wall4.png);
+	background-repeat:repeat;
+	background-position:left top;
+	height:auto;
+	width:1000px;
+	margin:0px auto;
+	clear:both;
+	padding-bottom:40px;
+	margin-left:28px;
+	z-index:999999;
+	}
+	.bottom-shade {
+	background-image:url(../images/bottom-shade.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	width:990px;
+	height:27px;
+	clear:both;
+	}
+	h2 { padding:0px 0px 20px 0px;}
+	#home .hline,#gift .hline, #wedding .hline, #portfolio .hline, #contact .hline  {
+	background-image:url(../images/hline.png);
+	background-repeat:repeat-x;
+	background-position:left top;
+	width:100%;
+	height:2px;
+	margin:20px 0px;
+	}
+/**********************  // Card style  ******************************/
+	
+/*-------------------------------------------------------*/
+	/* Preloader	 */
+/*-------------------------------------------------------*/
+	body { overflow:hidden; }
+	#preloader {
+	  position:absolute;
+	  top:0;
+	  left:0;
+	  width:100%;
+	  height:100%;
+	  background:white;
+	  z-index:2;
+	}
+	#spinner_container { width:193px; margin:250px auto; }
+	#spinner { display:block; margin:20px auto; }
+/**********************  // Preloader  ******************************/
+
+/*-------------------------------------------------------*/
+	/* Header	 */
+/*-------------------------------------------------------*/
+	#top-head {
+	background-color:#fbfbfb;
+	width:100%;
+	height:55px;
+	top: 0px; /* Top alignment of menu background */
+	position: fixed;
+	z-index:999999;
+	}
+/* menu start*/
+	.menu_nav {padding-top:20px; width:550px; margin:0 auto; }
+	ul.arrowunderline { list-style-type:none; margin:0; padding:0; }
+	ul.arrowunderline li {
+	float:left;
+	display:inline;
+	margin-left:35px; /* spacing between each menu item */
+	font-size:13px;
+	line-height:normal;
+	font-weight:normal;
+	color:#666666;
+	text-decoration:none;
+	text-transform:uppercase;
+	position:relative;
+	}
+	ul.arrowunderline li:hover { color:#c9af9e; cursor:pointer; }
+	ul.arrowunderline li:hover:after, ul.arrowunderline li#selected:after { /* use CSS generated content to add arrow to the menu */
+	content:'';
+	width:0;
+	height:0;
+	position:absolute;
+	}	
+	ul.arrowunderline li#selected { /* use CSS generated content to add arrow to the menu */
+	color:#c9af9e; /* style of arrow underline */
+	cursor:pointer;
+	}
+	#menu-icon { display:none; } /* this CSS for Mobile and Tablet menu
+/* //menu */
+	.border_pat{
+	background-image: url(../images/border-pat.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	clear:both;
+	height:7px;
+	margin-top:35px;
+	}
+	.green_bg{
+	background-color: #c9af9e;
+	z-index:777777;
+	margin-top:56px;
+	height:186px;
+	width:100%;
+	overflow:hidden;
+	}
+	.logo_sec{ width:500px; margin:0px auto;}
+	.groom{ float:left; margin-top:30px;}
+	.bride{ float:left; margin-top:30px; }
+	.middle_heart img{ float:left; padding:0px 0px 0px 10px;}
+
+/**********************  Home  start  ******************************/
+/* Card content */
+	.card_content{
+	clear:both;
+	width:980px;
+	margin:0 auto;
+	padding-top:30px;
+	}
+	.card_content p{padding:10px 30px;}
+	.card_left{ float:left; width:45%; height:auto;	}
+	.card_left img{ margin-left:95px; margin-bottom:20px;}
+	.card_heading{
+	clear:both;
+	color:#333333;
+	font-size:30px;
+	text-transform:capitalize;
+	text-align:center;
+	padding-bottom:10px;
+	}
+	.card_middle{ float:left; width:10%; height:auto; padding-top:80px; }
+	.card_circle{ 
+	width:60px; 
+	height:60px; 
+	background-color:#c9af9e;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
+	border-radius:50px;
+	behavior: url(pie.htc);
+	position:relative;			
+	margin-left:15px;
+	font-size:50px;
+	color:#ffffff;
+	text-align:center;
+	font-weight:100;
+	line-height:60px;
+	}
+	.card_circle a:link{ color:#ffffff; text-decoration:none;}	
+	.card_circle a:hover{ color:#333333; text-decoration:none;}
+	.card_circle a:visited{ color:#ffffff; text-decoration:none;}	
+	.card_circle a:active{ color:#ffffff; text-decoration:none;}
+	.card_right{ float:left; width:45%; height:auto;}
+	.card_right img{ margin-bottom:20px;}
+	#date{
+		font-size:50px;
+		font-weight:800;
+		color:#c9af9e;
+		line-height:60px;
+		text-transform:uppercase;
+		text-align:center;
+	}	
+/* //Card content */	
+
+/**********************  //home  ******************************/
+
+/**********************  Wedding  Start  ******************************/
+	#wedding{display:none;}
+	#wedding .heading_dots .left_dots{ width:31%;}
+	#wedding .heading_dots .right_dots{ width:31%;}	
+	#wedding ul{margin:60px 0px 0px 0px;padding:0px;}
+	#wedding ul li{
+	float:left;
+	display:inline;
+	list-style:none;
+	width:30.5%;
+	padding:0px 12px;
+	font-weight:300;
+	font-size:14px;
+	text-align:center;
+	border-right:solid 1px #e0e0e0;
+	}
+	#wedding ul li span{ font-size:13px; font-weight:300; }
+	#wedding ul li:last-child{ border-right:none; }
+	#wedding ul li .head{
+	font-weight:400;
+	font-size:18px;
+	text-align:center;
+	color:#333333;
+	}
+	#wedding ul li .green_txt{
+	font-weight:600;
+	font-size:16px;
+	text-align:center;
+	color:#c9af9e;
+	}
+/**********************  //Wedding  ******************************/
+
+/**********************  Wedding Album Start  ******************************/
+	#portfolio{display:none;}
+	#portfolio .heading_dots .left_dots{ width:15%;}
+	#portfolio .heading_dots .right_dots{ width:15%;}		
+	/* Filter menu */
+	#portfolio-filter { overflow:hidden; margin:20px 0px 0px 30%; }
+	#portfolio-filter li a {
+	float:left;
+	margin-right:10px;
+	color:#fff;
+	background-color:#6e6e6e;
+	padding:2px 6px 2px 6px;
+	margin-bottom:4px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	behavior: url(pie.htc);
+	position:relative;				
+	}
+	#portfolio-filter li a:hover { background-color:#c9af9e; }
+	#portfolio-filter li a.current { background-color:#c9af9e;	}
+	/* Images list */
+	#portfolio-list { width:980px; margin:0 auto;}
+	#portfolio-list li {
+	text-align:center;
+	width:226px;
+	height:200px;
+	list-style:none;
+	color:#898888;
+	margin:30px 9px 0px 9px;
+	}
+	#portfolio-list li:hover {
+	text-align:center;
+	cursor:pointer;
+	width:226px;
+	height:200px;
+	list-style:none;
+	}
+	#portfolio-list img { height:160px; width:226px; }
+	#portfolio-list li h5 {  margin-top:5px; color:#999999; }
+	#portfolio-list li:hover h5 { color:#c9af9e; }
+	#portfolio-list li .categorie {
+	font-size:11px;
+	line-height:20px;
+	color:#898888;
+	font-style:italic;
+	font-weight:normal;
+	}
+	/* Isotope filtering start */
+    .isotope-item { z-index:2;	}
+	.isotope-hidden.isotope-item { pointer-events: none; z-index: 1; }
+	.isotope, .isotope .isotope-item {/* change duration value to whatever you like */
+	-webkit-transition-duration:0.8s;
+	-moz-transition-duration:0.8s;
+	transition-duration:0.8s;
+	}
+	.isotope {
+	-webkit-transition-property:height, width;
+	-moz-transition-property:height, width;
+	transition-property:height, width;
+	}
+	.isotope .isotope-item {
+	-webkit-transition-property:-webkit-transform, opacity;
+	-moz-transition-property:-moz-transform, opacity;
+	transition-property:transform, opacity;
+	}
+	/* Isotope Filtering end */
+
+	/* adipoli start*/
+	.adipoli-wrapper { margin:auto; position:relative; display:inline-block; }
+	.adipoli-wrapper>img { position:absolute; z-index:1; }
+	.adipoli-before { position:absolute; z-index:5; }
+	.adipoli-after { position:absolute; z-index:10; }
+	.adipoli-slice { display:block; position:absolute; z-index:15; height:100%; }
+	.adipoli-box { display:block; position:absolute; z-index:15; }	
+	/* adipoli end*/
+/**********************  //Wedding Album  ******************************/
+
+/**********************  Gift start  ******************************/
+	#gift{display:none;}
+	#gift .dot_line{ padding:20px 0px 0px 0px;}
+	#gift .heading_dots .left_dots{ width:20%;}
+	#gift .heading_dots .right_dots{ width:20%;}		
+	#gift .gift-top {clear:both; margin:0px 0px 0px 36px;}
+	.register{ 
+	clear:both;
+	font-size:26px;
+	color:#999999;
+	text-align:center;
+	text-transform:capitalize;
+	padding:20px 0px;
+	}	
+	.gift_logos li{ 
+	float:left;
+	width:30%;
+	height:auto;
+	margin-right:20px;	
+	margin-bottom:20px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;		
+	}
+	.gift_logos li:hover{ 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;	
+	cursor:pointer;
+	}
+	.gift_logo1, .gift_logo2, .gift_logo3{ width: 250px; height:61px; background-repeat:no-repeat; background-position:left top;}
+	.gift_logo1{  background-image:url(../images/gift_logo1.png);}
+	.gift_logo2{ background-image:url(../images/gift_logo2.png);}
+	.gift_logo3{ background-image:url(../images/gift_logo3.png);}
+/**********************  //Gift  ******************************/
+
+/**********************  Contact  start  ******************************/
+	#contact{display:none;}
+	#contact .heading_dots .left_dots{ width:18%;}
+	#contact .heading_dots .right_dots{ width:18%;}		
+	#contact iframe { clear:both; width:95%; height:180px; margin:0px 0px 0px 20px; border:1px solid #ffffff;}	
+	#contact .left { width:53%; float:left; margin:10px 0px 0px 10px;}
+	#contact .left h2 { border-bottom:1px solid #cacccc; padding-bottom:14px; }
+/* Comment Form */
+	#contact_form { 
+	background:#d8dbdb;
+    border:1px solid #d3d3d3;
+	border-radius:3px;	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;	
+	behavior: url(pie.htc);
+	position:relative;		
+	margin:0 auto 1.625em;
+	padding:1.625em;
+	width:220px;
+	height:435px;
+	}
+	.boxBody {
+	width:100%;
+	float:left;
+	background-color:none;
+	-moz-border-radius-topright:3px; 
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-top-right-radius:3px;
+	-webkit-border-bottom-left-radius:3px;	
+	-webkit-border-bottom-right-radius:3px;		
+	behavior: url(pie.htc);
+	position:relative;			
+	}
+	.boxBody .desc { display:block; }
+   .post_message { font-weight:bold; }
+	#form { display:block; width:422px; padding:0px 20px 0px 5px; }
+	#form div{ float:left; width:422px; position:relative; }
+	#form label { width:100%; float:left; padding-top:5px; margin:0px 0px 0px -5px; }
+	#form label.error { 
+	color:#F00000;
+	position:absolute;
+	text-align:right;
+	font-size:11px;
+	top:0;
+	left:0;
+	}
+	#form input, textarea {
+	width:406px;
+	padding:8px;
+	font-size:13px;
+	color:#707070;
+	background-color:#FFFFFF;
+	float:left;
+	border-style:none;
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px;
+	behavior: url(pie.htc);
+	position:relative;			
+	margin:0px 0px 0px -10px;
+	}
+	#form input[type="text"]:focus, #form textarea:focus { background-color:none; color:#707070; outline:none; }
+	#form textarea{ font-family:Arial, Helvetica, sans-serif; font-size:13px; }
+	#form .submitBtn {
+	text-shadow:0 1px 0 #000;
+	color:#FFFFFF;
+	border-style:none;
+	font-size:15px;
+	display:block;
+	width:16%;
+	padding:3px 0px 3px 0px;
+	margin:10px 0px 0px 0px;
+	cursor:pointer;
+	background-color:#666666;
+	-webkit-box-shadow:0px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow:0px 1px 2px rgba(0,0,0,0.3);
+	box-shadow:0px 1px 2px rgba(0,0,0,0.3);
+	text-shadow:0 -1px 0 rgba(0,0,0,0.3);
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	behavior: url(pie.htc);
+	position:relative;			
+	float: right;
+	margin-right:60px;
+	}
+	#form .submitBtn:hover{ color:#ffffff; background-color:#c9af9e; }
+	#form .font-11{ font-size:11px; color:#c9af9e; display:inline; }
+	#form .form_left{ float:left; width:50%; height:auto;}
+	#form .form_right{ float:right; width:50%; height:auto;}	
+	#form .guests{ width:80%; }
+	#respond { 
+	background:#ebebeb;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	margin:0 auto 1.625em;
+	padding:1.625em;
+	width:420px;
+	height:auto;
+	margin-left:26px;
+	}
+	#respond input[type="text"], #respond textarea {
+	background:#fff;
+	border:4px solid #eee;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	behavior: url(pie.htc);
+	position:relative;		
+	-webkit-box-shadow:inset 0 1px 3px rgba(204,204,204,0.95);
+	-moz-box-shadow:inset 0 1px 3px rgba(204,204,204,0.95);
+	box-shadow:inset 0 1px 3px rgba(204,204,204,0.95);
+	text-indent:10px;
+	padding:2px 0px 0px 10px;
+	width:85%;
+	}
+	#respond select{ 
+	width:15%; 
+	height:25px; 
+	margin-top:5px; 
+	margin-left:-5px;  	
+	background:#fff;
+	border:4px solid #eee;
+	}	
+	#respond .comment-form-author, #respond .comment-form-email, #respond .comment-form-url, #respond .comment-form-comment { margin-top:-10px; }
+	#respond .comment-form-author label, #respond .comment-form-email label, #respond .comment-form-url label, 	#respond .comment-form-comment label	 	{
+	background:#eee;
+	-webkit-box-shadow:1px 2px 2px rgba(204,204,204,0.8);
+	-moz-box-shadow:1px 2px 2px rgba(204,204,204,0.8);
+	box-shadow:1px 2px 2px rgba(204,204,204,0.8);
+	color:#555;
+	display:inline-block;
+	font-size:13px;
+	left:4px;
+	min-width:60px;
+	padding:0px 10px;
+	top:35px;
+	z-index:1;
+	position:relative;
+	}
+	#respond label { line-height:2.0em; }
+	#respond input[type=text] { display:block; height:24px; width:85%; position:relative; }
+	#respond p {  position:relative; }
+	.form-allowed-tags { display:none; }
+	#respond label.error {
+	position:absolute;
+	z-index:1;
+	top:-4px;
+	font-size:12px;
+	color:#e92a0b;
+	padding:3px 9px 10px 10px;
+	width:260px;
+	height:20px;
+	margin:30px 0px 0px 400px;
+	text-align:left;
+	background-color:#d8dbdb;
+	border:solid 1px #d0d2d2;
+	}
+/* Contact Form alert end */
+	.hor-space { clear:both; height:45px; }
+	#contact .right { width:40%; float:right; margin:10px 20px 0px 0px;}
+	#contact .right .details ul { margin:0px; padding:10px 0px 0px 0px; }
+	#contact .right .details li {
+	list-style:none;
+	float:left;
+	width:190px;
+	font-size:14px;
+	color:#e86874;
+	padding:10px 35px 20px 0px;
+	font-weight:bold;
+	}
+	#contact .right .details li img { padding:0px 7px 20px 0px; float:left; width:38px; }
+	#contact .right .details li  span { font-weight:normal; clear:both; color:#363636; font-size:13px; }
+	#contact .right h2 { text-transform:none; text-align:left; margin:25px 0px 0px 0px; }
+	#contact .right img { margin:23px 0px 0px 0px; }
+	.pad-top5 { padding-top:6px; }
+	#contact .right .twitter {
+	width:386px;
+	height:150px;
+	background-image:url(../images/twitter.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	}
+	#contact .right .twitter h2 { text-align:left; padding:18px 0px 0px 20px; }
+	#contact .right .twitter ul { font-size:12px; color:#5e5d5d; padding:5px 10px 0px 20px; text-shadow:0px 1px 1px #ffffff; } 
+	#contact .right .twitter ul a { color:#c9af9e; } 
+	#contact .right .twitter ul a:hover { color:#B5B5B5; } 
+	#contact .right  span { float:right; width:70%; }
+	#contact .right span a { text-decoration:none; }
+	#contact .right  span a:hover { color:#c9af9e; text-decoration:none; }
+	.input-box1 {
+	float:left;
+	width:auto;
+	height:25px;
+	-moz-border-radius:5px;
+   -webkit-border-radius:5px;
+	border-radius:5px;
+	behavior: url(pie.htc);
+	position:relative;		
+	background-color:#c9af9e;
+	background-repeat:repeat;
+	background-position:left top;
+	color:#FFFFFF;
+	padding:0px 10px 0px 10px;
+	margin-bottom:20px;
+	}
+/**********************  //Contact  ******************************/

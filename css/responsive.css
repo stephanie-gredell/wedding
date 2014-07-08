@@ -1,0 +1,438 @@
+/*-------------------------------------------------------*/
+	/* Media Queries */
+/*-------------------------------------------------------*/
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+/* Wrap/Container */
+	#content{
+	background-image:url(../images/index-bg1.png);
+	background-repeat:repeat-y;
+	background-position:left top;
+	width:750px;	
+	height:auto;
+	min-height:500px;
+	}
+	.container { width:750px; margin:0 auto;  margin-top:-80px;}
+	.card-pattern{ width:730px; margin:0 auto;}
+	.card_content{ clear:both; width:730px; margin:0 auto; margin-left:5px;}	
+	.bottom-shade {
+	background-image:url(../images/bottom-shade1.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	width:750px;
+	height:25px;
+	clear:both;
+	}		
+	#home,#gift,#wedding,#portfolio,#contact { width:720px; height:auto; margin:0 auto;}
+	#home .hline,#gift .hline, #wedding .hline, #portfolio .hline, #contact .hline  { width:98%; }
+	#wedding h6,#gift h6, #portfolio h6, #contact h6{ font-size:20px; width:98%;}
+/* //Wrap/Container */
+
+/* Header  */
+	.logo_sec{ width:500px; font-size: 40px; }
+	.logo_sec span{color:#FFFFFF;}
+	.groom{ float:left;  padding-left:30px;}
+/* //Header  */	
+
+/* Home start */
+	.card_left{ clear:both; width:70%; margin-left:110px;}
+	.card_left img{ margin-left:70px; margin-bottom:20px;}
+	.card_middle{ display:none;}	
+	.card_right{ clear:both; width:70%; margin-left:110px;}
+	.card_right img{ margin-left:70px; margin-top:20px;}
+/* //Home section */	
+
+/* Wedding */
+	#wedding ul li{ width:29%;}	
+/* //Wedding */
+
+/* Gift start */
+	#gift .gift-top { margin:0px auto;}
+	.gift_logo1, .gift_logo2, .gift_logo3{ background-size:200px 49px; }
+	.gift_logos{ margin-left:10px; }		
+/* //Gift */
+
+/* Portfolio */
+	#portfolio-filter { margin:20px 0px 20px 20%; }
+	#portfolio-list { width:100%;  margin-top:-10px; }
+	#portfolio-list li { margin:12px 8px 0px 5px; }
+/* //Portfolio */
+
+/* Contact */
+	#contact iframe{ width:90%;}
+	#contact .heading_dots .left_dots{ width:15%;}
+	#contact .heading_dots .right_dots{ width:15%;}
+	#contact .left { margin:10px 0px 0px 10px; padding-top:10px; }
+	#contact .right { margin:0px 0px 0px 15px; }
+	#respond { height:auto; width:100%; }	
+	#respond input[type=text] { width:85%; }	
+	#respond textarea { resize:vertical; width:85%; }
+	#form { display:block; width:400px; padding:0px 20px 0px 0px; }	
+	#form label.error { color:#F00000; position:absolute; top:0px; left:-45px; }	
+	#form .submitBtn{ margin-right:50px; }
+	#contact .right { clear:both; float:left; padding:0px 0px 0px 25px; }	
+/* //Contact */
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+/* Wrap/Container */
+	#content{
+	background-image:url(../images/index-bg2.png);
+	background-repeat:repeat-y;
+	background-position:left top;
+	height:auto;
+	width:470px;
+	}
+	.container { width:450px; margin:0 auto; margin-top:-40px; }
+	.card-pattern{ width:450px; margin:0 auto;}
+	.card_content{ clear:both; width:450px; margin:0 auto; margin-left:5px;}	
+	.bottom-shade{
+	background-image:url(../images/botttom-shade3.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	width:470px;	
+	height:25px;
+	clear:both;
+	}	
+	#home,#wedding,#gift,#portfolio,#contact { width:430px; margin:0 auto;}
+	#wedding .hline,#gift .hline,#portfolio .hline, #contact .hline{width:94%; margin:20px 0px; }
+	#wedding h6,#gift h6, #portfolio h6, #contact h6{ font-size:16px; margin:0px 30px 0px 0px;}		
+/* // Wrap/Container */	
+
+/* Header  */
+	.dot_line{ clear:both; width:93%; margin:30px 0px; }	
+	.left_dots{ width:42%;}
+	.right_dots{ width:42%;}	
+	.heading_dots{ clear:both; width:100%; margin:20px auto; }		
+	.heading{ font-size:25px;  }	
+	.border_pat{ margin-top:12px; }	
+	.green_bg{ height:106px; }	
+	.border_pat{ margin-top:12px; }	
+	.green_bg .logo_sec{ width:400px; font-size: 30px; padding-left:30px;}
+	.groom{ float:left; margin-top:5px; padding-left:20px;}
+	.bride{ float:left; margin-top:5px;}
+	.logo_sec small{ margin-left:50px; font-size:12px; }
+	.middle_heart img{ width:80px; height:68px;}			
+/* //Header  */	
+
+/* Menu start */
+	ul.arrowunderline { display:none; }
+	ul.arrowunderline li {
+	font-family:"Open Sans";
+	font-size:12px;
+	line-height:22px;
+	font-weight:normal;
+	color:#b6b6b6;
+	text-decoration:none;
+	text-transform:none;
+	}	
+	ul.arrowunderline li:hover:after, ul.arrowunderline li#selected:after { border:hidden; }
+	.menu_nav { padding-top:0px; margin:5px 0px 0px 60%; }
+	#nav-wrap { position:relative; clear:both;}
+	
+	/* menu icon */	
+	#menu-icon {
+	width:15px;
+	height:30px;
+	background:#f8f8f8 url(../images/menu-icon.png) no-repeat 10px center;
+	padding:8px 25px 0 42px;
+	cursor:pointer;
+	-moz-box-shadow:10px 10px 5px #dbdbdb;
+    -webkit-box-shadow:10px 10px 5px #dbdbdb;
+	box-shadow:1px 1px 1px #dbdbdb;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:block; /* show menu icon */
+	}
+	#menu-icon:hover { background-color:#e3e2e2; }
+	#menu-icon.active { background-color:#e7e7e7; }
+	/* main nav */
+	#nav {
+	clear:both;
+	position:absolute;
+	top:45px;
+	width:120px;
+	z-index:10000;
+	padding:5px;
+	background:#f8f8f8;
+	border:1px solid #dbdbdb;
+	moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:none; /* visibility will be toggled with jquery */
+	}
+	#nav li { clear:both;  margin:3px 0 3px 10px;}
+	#nav li:hover {cursor:pointer; }
+	#nav li:hover:after, ul.arrowunderline li#selected:after { 
+	content:'';
+	width:0;
+	height:0;
+	position:absolute;
+	}
+	#nav li#selected{ cursor:pointer; border:hidden; }
+	#nav a, #nav ul a { font:inherit; background:none; display:inline; padding:0; color:#74c676; border:none; }
+	#nav a:hover, 
+	#nav ul a:hover { background:none; color:#74c676; }
+	
+	/* dropdown */
+	#nav ul { width:auto; position:static; display:block; border:none; background:inherit; }
+	#nav ul li { margin:3px 0 3px 15px; }
+/* //Menu */
+
+/* Home start */
+	.card_left{ clear:both; width:93%;}
+	.card_left img{ margin-left:35px; margin-bottom:20px; }
+	.card_middle{ display:none;}	
+	.card_right{ clear:both; width:93%;}
+	.card_right img{ margin-left:35px; margin-top:20px;}
+	.venue{ margin-left:-5px; width:95%; height:auto;}
+/* //Home */	
+
+/* Wedding start */
+	#wedding ul{ margin-top:0px;}
+	#wedding ul li{ clear:both; border-right:none; width:87%; margin:10px 0px;}
+/* //Wedding */
+
+/* Gift start */
+	#gift .gift-top { margin:0px auto;}
+	.gift_logos li{ 
+	clear:both;
+	width:60%;
+	height:auto;
+	margin-left:15%;
+	margin-top:10px;
+	margin-bottom:10px;
+	}	
+/* //Gift */
+
+/* Portfolio start */
+	#portfolio-filter { margin:20px 0px 20px 30px; }
+	#portfolio-list { width:100%; margin-left:5px;  margin-top:-10px; }
+	#portfolio-list li { clear:both; margin:12px 8px 0px 20%; }
+/* //Portfolio */
+
+/* Contact start */
+	#contact .left { width:78%; padding-top:10px; margin-left:0px; }	
+	#contact iframe{ width:93%; margin-left:0;}	
+	#respond { width:100%; height:auto; margin:0px 0px 0px 0px; }
+	#respond textarea { width:110%; clear:both; }
+	#respond input[type=text] { width:110%; }
+	#form { display:block; width:250px; padding:0px 20px 0px 0px; }
+	#form .submitBtn { margin:20px -20px 0px 0px; width:30%; }
+	#form div { width:250px; }
+	#form label { width:100%; clear:both; }
+	.input-box1 { margin-bottom:10px; }
+	#form .form_left{ clear:both; width:100%; height:auto;}
+	#form .form_right{ clear:both; width:100%; height:auto;}	
+	#form .guests{ width:80%; }
+	#respond label.error {
+	position:static;
+	font-size:10px;
+	width:100%;
+	height:25px;
+	line-height:14px;
+	margin:0px 0px 0px -5px;
+	padding:6px 0px 0px 5px;
+	clear:both;
+	}
+	#respond select{ width:35%; }
+	#contact .right { width:93%; clear:both; margin-left:15px; }
+/* //Contact */
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+/* Wrap/Container */
+	#content{
+	background-image:url(../images/index-bg3.png);
+	background-repeat:repeat-y;
+	background-position:left top;
+	height:auto;
+	width:300px;
+	}
+	.container { width:290px; margin:0 auto; margin-top:-40px;}
+	.card-pattern{ width:290px; margin:0 auto;}
+	.card_content{ clear:both; width:290px; margin:0 auto; margin-left:5px;}	
+	.bottom-shade{
+	background-image:url(../images/botom-shade2.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	height:25px;
+	width:300px;
+	clear:both;
+	}
+	.dot_line{ clear:both; width:93%; margin:20px 0px;}	
+	.left_dots{ width:38%;}
+	.right_dots{ width:38%;}	
+	#home,#wedding,#gift,#portfolio,#contact { width:280px; margin:0 auto; }	
+	#wedding .hline,#gift .hline, #portfolio .hline, #contact .hline { width:94%; margin:20px 0px; }
+	.heading_dots{ clear:both; width:100%; margin:20px auto; }		
+	.heading{ font-size:22px;  }
+	#wedding h6,#gift h6, #portfolio h6, #contact h6{ font-size:14px; line-height:25px; margin:0px 20px 0px 0px;}
+/* //Wrap/Container */
+
+/* Header  */
+	.green_bg{ height:106px; }	
+	.border_pat{ margin-top:12px; }	
+	.green_bg .logo_sec{ width:300px; font-size: 25px;}
+	.groom{ float:left; margin-top:5px; padding-left:20px;}
+	.bride{ float:left; margin-top:5px;}
+	.logo_sec small{ margin-left:20px;  font-size:12px; }
+	.middle_heart img{ width:80px; height:68px;}			
+/* //Header  */	
+
+/* Menu start */
+	ul.arrowunderline { display:none; }
+	ul.arrowunderline li {
+	font-family:"Open Sans";
+	font-size:12px;
+	line-height:22px;
+	font-weight:normal;
+	color:#b6b6b6;
+	text-decoration:none;
+	text-transform:none;
+	}	
+	ul.arrowunderline li:hover:after, ul.arrowunderline li#selected:after { border:hidden; }
+	.menu_nav { padding-top:0px; margin:5px 0px 0px 60%; }
+	#nav-wrap { position:relative; clear:both;}
+	
+	/* menu icon */	
+	#menu-icon {
+	color:#74c676;
+	width:15px;
+	height:30px;
+	background:#f8f8f8 url(../images/menu-icon.png) no-repeat 10px center;
+	padding:8px 25px 0 42px;
+	cursor:pointer;
+	-moz-box-shadow:10px 10px 5px #dbdbdb;
+    -webkit-box-shadow:10px 10px 5px #dbdbdb;
+	box-shadow:1px 1px 1px #dbdbdb;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:block; /* show menu icon */
+	}
+	#menu-icon:hover { background-color:#e3e2e2; }
+	#menu-icon.active { background-color:#e7e7e7; }
+	/* main nav */
+	#nav {
+	clear:both;
+	position:absolute;
+	top:45px;
+	width:120px;
+	z-index:10000;
+	padding:5px;
+	background:#f8f8f8;
+	border:1px solid #dbdbdb;
+	moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:none; /* visibility will be toggled with jquery */
+	}
+	#nav li { clear:both;  margin:3px 0 3px 10px;}
+	#nav li:hover { color:#74c676; cursor:pointer; }
+	#nav li:hover:after, ul.arrowunderline li#selected:after { 
+	content:'';
+	width:0;
+	height:0;
+	position:absolute;
+	}
+	#nav li#selected{ color:#74c676; cursor:pointer; border:hidden; }
+	#nav a, #nav ul a { font:inherit; background:none; display:inline; padding:0; color:#74c676; border:none; }
+	#nav a:hover, 
+	#nav ul a:hover { background:none; color:#74c676; }
+	
+	/* dropdown */
+	#nav ul { width:auto; position:static; display:block; border:none; background:inherit; }
+	#nav ul li { margin:3px 0 3px 15px; }
+/* //Menu */
+
+/* Home start */
+	.card_left{ clear:both; width:93%;}
+	.card_left img{ margin-left:10px; margin-bottom:20px; width:250px; height:210px; }
+	.card_heading{font-size:22px;}	
+	.card_middle{ display:none;}	
+	.card_right{ clear:both; width:93%;}
+	.card_right img{ margin-left:10px; margin-top:20px; width:250px; height:210px;}
+	.card_social ul{ margin:0px 0px 0px 50px;}
+	.venue{ margin-left:-5px; width:98%; height:auto;}
+	#home #date{font-size:32px;}	
+/* //Home */	
+
+/* Wedding start */
+	#wedding .heading_dots .left_dots{ width:20%;}
+	#wedding .heading_dots .right_dots{ width:20%;}	
+	#wedding ul{ margin-top:-10px;}
+	#wedding ul li{ clear:both; width:85%; border-right:none; margin:10px 0px;}
+/* //Wedding */
+
+/* Gift start */
+	#gift .gift-top { margin:0px auto;}
+	#gift .heading_dots .left_dots{ width:15%;}
+	#gift .heading_dots .right_dots{ width:15%;}	
+	.register{ font-size:20px; padding:5px 0px; }	
+	.gift_logos li{ 
+	clear:both;
+	width:92%;
+	height:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	}				
+/* //Gift */
+
+/* //Portfolio start */
+	#portfolio .heading_dots .left_dots{ width:10%;}
+	#portfolio .heading_dots .right_dots{ width:10%;}	
+	#portfolio-filter { margin:20px 0px 20px 25px; }
+	#portfolio-list { width:100%; margin-left:5px;  margin-top:-10px; }
+	#portfolio-list li { clear:both; margin:12px 8px 0px 6%; }
+/* Portfolio */
+
+/* Contact start */
+	#contact .heading_dots .left_dots{ width:12%;}
+	#contact .heading_dots .right_dots{ width:12%;}	
+	#contact .left { width:78%; padding-top:10px; margin-left:0px; }	
+	#contact iframe{ width:92%; height:150px;  margin-left:0px; }	
+	#respond { width:100%; height:auto; margin:0px 0px 0px 0px; }
+	#respond textarea { width:110%; clear:both; }
+	#respond input[type=text] { width:110%; }
+	#form { display:block; width:200px; padding:0px 20px 0px 0px; }
+	#form .submitBtn { margin:20px -20px 0px 0px; width:30%; }
+	#form div { width:200px; }
+	#form label { width:100%; clear:both; }
+	.input-box1 { margin-bottom:10px; }
+	#form .form_left{ clear:both; width:100%; height:auto;}
+	#form .form_right{ clear:both; width:100%; height:auto;}	
+	#form .guests{ width:80%; }
+	#respond label.error {
+	position:static;
+	font-size:10px;
+	width:230px;
+	height:25px;
+	line-height:14px;
+	margin:0px 0px 0px -5px;
+	padding:6px 0px 0px 5px;
+	clear:both;
+	}
+	#respond select{ width:35%; }
+	#contact .right { width:94%; clear:both; margin-left:15px; }
+	#contact .right .twitter {
+	background-image:url(../images/twitter1.png);	
+	background-repeat:no-repeat;
+	background-position:left top;
+	width:248px;
+	height:122px;
+	margin:20px 0px 0px 0px;
+	}
+	#contact .right .twitter h2 { padding:0px 0px 0px 20px; }
+	#contact .right  span { width:60%;}
+	#contact .right .twitter p { padding:0px 0px 0px 20px; } 	
+/* //Contact */
+}
+
